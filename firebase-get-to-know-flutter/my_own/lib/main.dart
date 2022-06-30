@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:gtk_flutter/app.dart';
-
-import 'src/widgets.dart';
+import 'package:gtk_flutter/application_state.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const App());
+  runApp(
+    ChangeNotifierProvider(
+      create: (ctx) => ApplicationState(),
+      builder: (ctx, _) => const App(),
+    ),
+  );
 }

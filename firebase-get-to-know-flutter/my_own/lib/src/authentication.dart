@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:gtk_flutter/src/application_login_state.dart';
 
 import 'widgets.dart';
-
-enum ApplicationLoginState {
-  loggedOut,
-  emailAddress,
-  register,
-  password,
-  loggedIn,
-}
 
 class Authentication extends StatelessWidget {
   const Authentication({
